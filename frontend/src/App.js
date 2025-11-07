@@ -27,7 +27,7 @@ export default function App() {
     ];
 
     try {
-      const res = await fetch("https://stress-level-detection.onrender.com/predict", {
+      const res = await fetch("https://stress-level-detection.onrender.com/predict", { https://stress-level-detection.onrender.com/
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: features }),
