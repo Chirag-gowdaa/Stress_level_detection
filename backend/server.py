@@ -20,6 +20,9 @@ except Exception as e:
     model = None
     scaler = None
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Backend is running!", 200
 # Health check endpoint
 @app.route('/health', methods=['GET'])
 def health():
